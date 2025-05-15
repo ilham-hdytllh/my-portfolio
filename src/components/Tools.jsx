@@ -66,14 +66,26 @@ const tools = [
 const Tools = () => {
   return (
     <>
-     <div className="max-w-screen-xl px-4 py-8 mx-auto mt-10">
-        <h2 className="text-3xl font-semibold mb-2 text-start text-black dark:text-white">Tools yang dipakai</h2>
-        <p className="font-normal text-black mb-6 dark:text-gray-300">Berikut ini beberapa tools yang saya gunakan, untuk membangun aplikasi.</p>
+     <div className="max-w-screen-xl px-4 py-8 mx-auto mt-16">
+        <h2 className="text-3xl font-semibold mb-2 text-start text-black dark:text-white" data-aos="fade-up" 
+        data-aos-duration="1000">Tools yang dipakai</h2>
+        <p className="font-normal text-black mb-6 dark:text-gray-300" data-aos="fade-up"
+        data-aos-duration="1000" data-aos-delay="300">Berikut ini beberapa tools yang saya gunakan, untuk membangun aplikasi.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {tools.map((tool, index) => (
+        {tools.map((tool, index) => {
+          const cols = 4;
+          const row = Math.floor(index / cols);
+          const col = index % cols;
+          const baseDelay = 100;
+          const delay = (row * cols + col) * baseDelay;
+
+          return (
             <div
               key={index}
               className="flex items-center gap-4 p-4 border border-zinc-600 rounded-lg shadow-sm bg-white dark:bg-zinc-800"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={delay}
             >
               <img
                 src={tool.image}
@@ -84,7 +96,8 @@ const Tools = () => {
                 {tool.name}
               </span>
             </div>
-          ))}
+          );
+        })}
         </div>
       </div>
     </>

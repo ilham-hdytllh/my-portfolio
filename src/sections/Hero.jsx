@@ -1,17 +1,10 @@
-import React, { useEffect, useState  } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 const Hero = () => {
-//  useEffect(() => {
-//         AOS.init({ duration: 2000 });
-//  }, []);
 
   return (
     <>
      <section id="home" className="bg-white dark:bg-zinc-900">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7" >
+        <div className="mr-auto place-self-center lg:col-span-7 animate__animated animate__fadeInUp animate__delay-1s">
           <h1 className="max-w-2xl mb-4 text-4xl font-semibold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
             Hi, Saya Ilham Hidayatullah
           </h1>
@@ -26,14 +19,8 @@ const Hero = () => {
             Download CV
             <img src="/assets/icons/download-icon.svg" alt="Download icon" className="w-5 h-5" />
           </a>
-          {/* <a
-            href="#"
-            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-          >
-            Learn more
-          </a> */}
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex" >
+        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex animate__animated animate__fadeInUp animate__delay-2s">
           <img
             src="/assets/profile.png"
             alt="mockup"

@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.6",
+    "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "flowbite": "^3.1.2",
     "react": "^19.1.0",
