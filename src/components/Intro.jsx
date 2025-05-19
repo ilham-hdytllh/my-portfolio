@@ -1,7 +1,7 @@
 const Intro = () => {
   return (
     <>
-    <div className="flex justify-center items-center" data-aos-offset="400" data-aos="fade-up" 
+    <div className="flex justify-center items-center" data-aos="fade-up" 
        data-aos-duration="1000">
       <div className="bg-zinc-800 mt-10 p-6 rounded-lg text-center w-full max-w-3xl mx-4" >
         <p className="mb-6 font-normal text-gray-300 lg:mb-8 dark:text-gray-400 text-justify">
