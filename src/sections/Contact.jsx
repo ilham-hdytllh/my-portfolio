@@ -45,13 +45,13 @@ const Contact = () => {
 
       {/* Contact Form */}
       <section id="contact">
-        <div className="px-4 bg-white dark:bg-zinc-900 pt-10 pb-10">
+        <div className="px-4 pt-10 pb-10">
           <h2 className="text-3xl font-semibold mb-2 text-center text-black dark:text-white" data-aos="fade-up"
         data-aos-duration="1000">Kontak</h2>
           <p className="font-normal text-black mb-8 text-center dark:text-gray-300" data-aos="fade-up"
-        data-aos-duration="1000" data-aos-delay="300">Terhubung dengan saya sekarang.</p>
+        data-aos-duration="1000">Terhubung dengan saya sekarang.</p>
           <div className="flex justify-center" data-aos="fade-up"
-        data-aos-duration="1000" data-aos-delay="600">
+        data-aos-duration="1000">
             <div className="w-full max-w-lg bg-white dark:bg-zinc-800 rounded-xl shadow-md p-8">
               <form ref={form} onSubmit={sendEmail}>
                 <div className="mb-6">

@@ -55,12 +55,12 @@ const projects = [
 const Proyek = () => {
   return (
     <>
-    <section id="project" className="bg-white dark:bg-zinc-900">
+    <section id="project">
         <div className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-3xl font-semibold mb-2 mt-7 text-center text-black dark:text-white" data-aos="fade-up" 
-        data-aos-duration="1000" data-aos-offset="200">Proyek</h2>
+        data-aos-duration="1000">Proyek</h2>
         <p className="font-normal text-black mb-8 text-center dark:text-gray-300" data-aos="fade-up"
-        data-aos-duration="1000" data-aos-offset="300" data-aos-delay="300" >Berikut ini beberapa proyek yang telah saya buat.</p>
+        data-aos-duration="1000">Berikut ini beberapa proyek yang telah saya buat.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => {
             const cols = 3;

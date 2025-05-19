@@ -70,7 +70,7 @@ const Tools = () => {
         <h2 className="text-3xl font-semibold mb-2 text-start text-black dark:text-white" data-aos="fade-up" 
         data-aos-duration="1000">Tools yang dipakai</h2>
         <p className="font-normal text-black mb-6 dark:text-gray-300" data-aos="fade-up"
-        data-aos-duration="1000" data-aos-delay="300">Berikut ini beberapa tools yang saya gunakan, untuk membangun aplikasi.</p>
+        data-aos-duration="1000">Berikut ini beberapa tools yang saya gunakan, untuk membangun aplikasi.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {tools.map((tool, index) => {
           const cols = 4;

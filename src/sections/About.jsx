@@ -4,7 +4,7 @@ import Tools from '../components/Tools'
 const About = () => {
   return (
    <>
-     <section id="about" className="bg-white dark:bg-zinc-900">
+     <section id="about">
      <Intro/>
      <Tools/>
      </section>
